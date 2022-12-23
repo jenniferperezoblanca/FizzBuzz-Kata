@@ -20,5 +20,5 @@ for (let numero = 1; numero <= 100; numero++) {
 // me pasan varias cosas extrañas en la linea 1 si lo quito , me sale la lista en la consola pero el test 
 //me da error , si la pongo pasa el test pero no sale la lista . 
 
-//GRACIAS POR LA AYUDA DE AMR ,TUYA Y DE IRIS. 
+//GRACIAS POR LA AYUDA DE AMR ,TUYA Y DE IRIS. git
 
