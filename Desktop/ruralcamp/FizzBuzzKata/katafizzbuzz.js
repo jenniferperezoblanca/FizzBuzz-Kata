@@ -1,17 +1,24 @@
-function kata(n) {
-  // Verificamos si el número es múltiplo de 3 y de 5
-  if (n % 3 == 0 && n % 5 == 0) {
-    // Si es múltiplo de 3 y de 5, devolvemos "FizzBuzz"
-    return "FizzBuzz";
-  } else if (n % 3 == 0) {
-    // Si es múltiplo de 3, pero no de 5, devolvemos "Fizz"
-    return "Fizz";
-  } else if (n % 5 == 0) {
-    // Si es múltiplo de 5, pero no de 3, devolvemos "Buzz"
-    return "Buzz";
-  } else {
-    // Si no es múltiplo de ni 3 ni 5, devolvemos el número como una cadena de caracteres
-    return n;
+module.exports = fizzBuzz
+
+function fizzBuzz(numero) {
+  if (numero % 3 == 0 && numero % 5 == 0) {
+    return "FizzBuzz"
   }
+  if (numero % 3 == 0) {
+    return "Fizz"
+  }
+  if (numero % 5 == 0) {
+    return "Buzz"
+  }
+
 }
- module.exports = kata;
+
+for (let numero = 1; numero <= 100; numero++) {
+  console.info(fizzBuzz(numero))
+}
+
+// me pasan varias cosas extrañas en la linea 1 si lo quito , me sale la lista en la consola pero el test 
+//me da error , si la pongo pasa el test pero no sale la lista . 
+
+//GRACIAS POR LA AYUDA DE AMR ,TUYA Y DE IRIS. 
+

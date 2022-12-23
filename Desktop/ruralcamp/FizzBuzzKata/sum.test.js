@@ -1,18 +1,15 @@
 
-const kata = require('./katafizzbuzz');
+const { default: expect } = require('expect');
 
-test("kata(1) debe devolver 1", () => {
-  expect(kata(1)).toBe(1);
+const fizzBuzz = require('./katafizzbuzz');
+
+test("Si el numero es divisible de 3 nos devuelve Fizz", () => {
+  expect(fizzBuzz(3)).toBe("Fizz");
+});
+test("si el numero es divisible de 5 nos devuelve Buzz", () => {
+  expect(fizzBuzz(5)).toBe("Buzz");
 });
 
-test("kata(3) debe devolver Fizz", () => {
-  expect(kata(3)).toBe("Fizz");
-});
-
-test("kata(5) debe devolver Buzz", () => {
-  expect(kata(5)).toBe("Buzz");
-});
-
-test("kata(15) debe devolver FizzBuzz", () => {
-  expect(kata(15)).toBe("FizzBuzz");
+test("si el es divisible de 3 y 5 nos devuelve FizzBuzz", () => {
+  expect(fizzBuzz(15)).toBe("FizzBuzz");
 });
